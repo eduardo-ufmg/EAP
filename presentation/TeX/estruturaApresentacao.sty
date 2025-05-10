@@ -32,33 +32,33 @@
 \RequirePackage{caladea,carlito}
 \RequirePackage{caption}
 \RequirePackage{newfloat}
+\RequirePackage{multicol} % Ensure the multicols environment is available
 
 \usetikzlibrary{automata, arrows.meta, positioning, shapes}
 
 \DeclareOption{hideSubsectionTitle}{
-    \ifdefined\esconder
-    \else
-        \newcommand{\esconder}{}
-    \fi
+  \ifdefined\esconder
+  \else
+    \newcommand{\esconder}{}
+  \fi
 }
 
 \ProcessOptions\relax
 
 \ifdefined\esconder
-    \usetheme{Frankfurt}
+  \usetheme{Frankfurt}
 \else
-    \usetheme{Darmstadt}
+  \usetheme{Darmstadt}
 \fi
 
 \renewcommand{\familydefault}{\sfdefault}
-
 
 \definecolor{corComentario}{RGB}{150,150,150}
 \definecolor{corString}{RGB}{206,123,0}
 \definecolor{corPalavraChave}{RGB}{0,0,230}
 
 \lstset{
-    inputencoding=utf8/latin1,
+  inputencoding=utf8/latin1,
 	numbers=left,
 	stepnumber=1,
 	firstnumber=1,
@@ -90,11 +90,11 @@
 
 % configurações do beamer para o template
 \logo{%
-    \begin{tikzpicture}[overlay,remember picture]%
-    \node[left=0cm] at (current page.-27){%
-        \includegraphics[scale=0.2]{imagens/logo}%
-    };
-    \end{tikzpicture}%
+  \begin{tikzpicture}[overlay,remember picture]%
+  \node[left=0cm] at (current page.-27){%
+    \includegraphics[scale=0.2]{imagens/logo}%
+  };
+  \end{tikzpicture}%
 }
 
 \beamertemplatenavigationsymbolsempty
