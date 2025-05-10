@@ -29,3 +29,30 @@ Here, we see the samples ranked by how close they are to the test sample.
 
 [ SLIDE 10: NEAREST NEIGHBOR LABEL ]
 This shows the test sample predicted with the label of its nearest neighbor.
+
+[ SLIDE 11: 2D SET RECAP ]
+For us to get a better catch of the method, let's apply it to the dataset from the initial problem.
+
+[ SLIDE 12: EDGES TO THE NEAREST NEIGHBOR ]
+This figure shows each test sample connected by a black edge to its nearest training sample.
+
+[ SLIDE 13: 2D NEAREST NEIGHBOR PREDICTION ]
+And this figure shows the samples predicted with the label of their nearest neighbor. Now, note something: to predict the label for a sample, we only need its position. So, we are also predicting points in the space. Say, < attendant > which label you assign to this point, here? And this, here? Good. Now, we do this for a grid of points that cover this entire region and see what we get.
+
+[ SLIDE 14: DECISION BOUNDARY FOR 1NN ]
+Here, each point is colored according to the class a sample in it is assigned. We can see that some regions do not seem correctly predicted and that the discrepancies between the obtained and the expected may be beyond tolerance. Can you explain why this happened? In the training stage, where our character labeled the samples' fur color, it's likely that some were misclassified. We can see that some train samples, like this and this, are part of a distribution that doesn't match its assigned label. In the prediction step, the samples that are closer to them than to the correctly labeled ones receive their labels, which are probably not correct according to the distribution.
+
+[ SLIDE 15: PREDICTION FOR 10NN ]
+This figure shows how the test samples are predicted if we consider the ten train samples that are closest to it, or its ten nearest neighbors.
+
+[ SLIDE 16: DECISION BOUNDARY FOR 10NN ]
+And, in this plot, the resulting decision boundary is shown. Note that it is really smother and that the outliers' effect is drastically reduced. It indicates that this model achieved a better fit for the classes' pattern.
+
+[ SLIDE 17: REAL DATA ]
+Now, we check it on real data. For that, the Pima Indians Diabetes dataset was chosen. This set consists of seven hundred and sixty-eight samples, split into two unbalanced classes, “Diabetic” or “Non-Diabetic.” There are five informative features: glucose, blood pressure, skin thickness, insulin, and body mass index.
+
+[ SLIDE 18: RESULTS ]
+That table shows that increasing the number of neighbors from one to three is enough to improve accuracy by seven percent.
+
+[ SLIDE 19: THANK YOU ]
+That is it. Thank you! Questions?
