@@ -3,11 +3,20 @@
 \subsection{Data summary}
 
 \begin{frame}{Dataset summary}
-  
+  \textbf{Pima Indians Diabetes}, \cite{smith1988}
+  \begin{itemize}
+    \item 768 samples: female patients of Pima Indian heritage
+    \item 5 features: glucose, blood pressure, skin thickness, insulin, BMI
+    \item 2 classes: diabetes (positive) or not (negative)
+  \end{itemize}
 \end{frame}
 
 \subsection{Results}
 
 \begin{frame}{Results}
-  % results table
+  \begin{table}[!htbp]
+    \centering
+    \caption{Results for 10-fold cross-validation}
+    \csvautotabular{../results/crossvalresults.csv}
+  \end{table}
 \end{frame}
