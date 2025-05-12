@@ -2,22 +2,44 @@
 
 \subsection{Limited visualisation}
 
-\begin{frame}{Higher dimensional data}
-  % 4d train + test
+\begin{frame}[allowframebreaks]{Higher dimensional data}
+  \begin{table}[!htbp]
+    \centering
+    \caption{Four-dimensional train samples}
+    \csvautotabular{../results/4dtrain.csv}
+  \end{table}
+
+  \begin{table}[!htbp]
+    \centering
+    \caption{Four-dimensional test sample}
+    \csvautotabular{../results/4dtest.csv}
+  \end{table}
 \end{frame}
 
 \subsection{Distance}
 
 \begin{frame}{Distance}
-  % 4d train with distance
+  \begin{table}[!htbp]
+    \centering
+    \caption{Four-dimensional train samples with distances}
+    \csvautotabular{../results/4dtraindist.csv}
+  \end{table}
 \end{frame}
 
 \subsection{Closeness}
 
 \begin{frame}{Closeness ranking}
-  % 4d train with closeness
+  \begin{table}[!htbp]
+    \centering
+    \caption{Four-dimensional train samples ranked by distances}
+    \csvautotabular{../results/4dtrainsorted.csv}
+  \end{table}
 \end{frame}
 
-\begin{frame}{Nearest neighbour label}
-  % 4d test labeled
+\begin{frame}{Nearest neighbor label}
+  \begin{table}[!htbp]
+    \centering
+    \caption{Four-dimensional test sample labelled by its nearest neighbor}
+    \csvautotabular{../results/4dpred.csv}
+  \end{table}
 \end{frame}
