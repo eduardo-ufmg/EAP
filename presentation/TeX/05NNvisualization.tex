@@ -6,6 +6,9 @@
     \small{\caption{Recall of the 2D dataset}}
     \includegraphics[scale=0.5]{../results/2dday.png}
   \end{figure}
+
+  \note{ }
+
 \end{frame}
 
 \begin{frame}{Edges to the nearest neighbor}
@@ -14,6 +17,9 @@
     \small{\caption{Test samples connected to their nearest neighbor}}
     \includegraphics[scale=0.5]{../results/2dedges.png}
   \end{figure}
+
+  \note{ }
+
 \end{frame}
 
 \begin{frame}{Nearest neighbor prediction}
@@ -22,6 +28,11 @@
     \small{\caption{Test samples predicted by their nearest neighbor}}
     \includegraphics[scale=0.5]{../results/2dprednn.png}
   \end{figure}
+
+  \note{We are also prediting points in the space <br>
+  Predict some points without samples <br>
+  Let's do that for the entire grid}
+
 \end{frame}
 
 \subsection{Decision boundary}
@@ -32,4 +43,10 @@
     \small{\caption{Decision boundary of the nearest neighbor classifier}}
     \includegraphics[scale=0.5]{../results/dbnn.png}
   \end{figure}
+
+  \note{Some regions seem wrongly labeled <br>
+  Why? <br>
+  Misclassification in training <br>
+  Some points are closer to the misclassified sample}
+
 \end{frame}
